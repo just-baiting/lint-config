@@ -9,7 +9,9 @@
     "lerna:clean": "lerna clean --yes",
     "lerna:release": "lerna publish from-package --yes",
     "lerna:release-canary": "lerna publish --canary",
-    "lerna:version": "lerna version"
+    "lerna:version": "lerna version",
+    "turbo:build": "turbo run build",
+    "version": "changeset version"
   },
   "repository": {
     "type": "git",
@@ -26,7 +28,8 @@
     "@just-baiting/prettier-config": "^0.0.1",
     "husky": "^6.0.0",
     "lerna": "^4.0.0",
-    "lint-staged": "^10.5.4"
+    "lint-staged": "^10.5.4",
+    "turbo": "^1.2.8"
   },
   "husky": {
     "hooks": {
@@ -35,5 +38,9 @@
   },
   "lint-staged": {
     "*.js": "eslint --fix"
-  }
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.22.0"
+  },
+  "version": "0.0.2"
 }
