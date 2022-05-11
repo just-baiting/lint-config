@@ -11,7 +11,8 @@
     "lerna:release-canary": "lerna publish --canary",
     "lerna:version": "lerna version",
     "turbo:build": "turbo run build",
-    "version": "changeset version"
+    "version": "changeset version",
+    "publish": "changeset publish"
   },
   "repository": {
     "type": "git",
